@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 MAINTAINER Timothy Callemein <timothy@callemein.be>
 
-RUN apt-get update -y && apt-get install -yq \
+RUN apt-get update -y && DEBIAN_FRONTEND=noninteractive apt-get install -yq \
     rrdtool \
     perl \
     libwww-perl \
